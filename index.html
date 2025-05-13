@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Top Attractions in Milan</title>
+  <title>Discover Milan by Neighborhood</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       margin: 20px;
       line-height: 1.6;
-      background-color: #f9f9f9;
       color: #333;
     }
     h1, h2 {
@@ -22,81 +22,66 @@
     a:hover {
       text-decoration: underline;
     }
-    .attraction {
-      margin-bottom: 30px;
+    .accordion {
+      cursor: pointer;
+      padding: 15px;
+      border: none;
+      background-color: #eee;
+      font-size: 18px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      transition: 0.3s;
+      margin-bottom: 5px;
+    }
+    .accordion.active, .accordion:hover {
+      background-color: #ccc;
+    }
+    .panel {
+      padding: 0 15px;
+      display: none;
+      background-color: #f9f9f9;
+      border-left: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+      border-bottom: 2px solid #ccc;
+    }
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>Top Attractions in Milan – City Center Walking Tour</h1>
+  <h1>Discover Milan by Neighborhood</h1>
 
-  <div class="attraction">
-    <h2><a href="https://maps.app.goo.gl/caKX8rioUSxRUDgc7" target="_blank">1. Piazza del Duomo & Milan Cathedral (Duomo)</a></h2>
-    <p>Start your visit at the heart of Milan: Piazza del Duomo. The Milan Cathedral (Duomo) is a masterpiece of Gothic architecture.</p>
-    <p>You can buy tickets online to visit the cathedral and climb to the terraces: 
-      <a href="https://ticket.duomomilano.it/en/categoria/biglietti/" target="_blank">ticket.duomomilano.it</a><br />
-      Alternatively, tickets can be purchased on site, but be aware of possible lines.
-    </p>
-  </div>
-
-  <div class="attraction">
-    <h2><a href="https://maps.app.goo.gl/aaffgp3ZFzvwkSUj8" target="_blank">2. Museo del Novecento</a></h2>
-    <p>📍 Piazza del Duomo 8, Milan</p>
-    <p>Located next to the Duomo, this museum hosts 20th-century art and offers a breathtaking view of the cathedral from the top floor – perfect for photos!</p>
-    <p>Entry: €5 (standard), €3 (reduced).<br />
-    Tickets: <a href="https://museicivicimilano.vivaticket.it/en/event/museo-del-novecento/155202" target="_blank">Buy here</a> or at the museum. Usually, no long lines.</p>
-  </div>
-
-  <div class="attraction">
-    <h2><a href="https://maps.app.goo.gl/wTPvahJk4kAEtGPX7" target="_blank">3. Galleria Vittorio Emanuele II</a></h2>
-    <p>Named after the first king of Italy, this elegant arcade is known as Milan's “drawing room”. It's been a popular meeting place for the city's bourgeoisie since its origins.</p>
-    <p><strong>Fun fact:</strong> Tradition says spinning with your right heel on the bull’s mosaic in the central octagon brings good luck.</p>
-    <p>Admission: Free</p>
-  </div>
-
-  <div class="attraction">
-    <h2><a href="https://maps.app.goo.gl/fir4pcFdLH9NWJs39" target="_blank">4. Piazza della Scala & Teatro alla Scala</a></h2>
-    <p>📍 Via Filodrammatici 2, Milan</p>
-    <p>Continue through the Galleria to reach Piazza della Scala, home to the famous opera house Teatro alla Scala.</p>
-    <p><strong>Museum visit:</strong> 9:30 am – 5:00 pm → 
-      <a href="https://www.museoscala.org/en/visit/museum-and-theater/guided-tour-of-the-theater.html" target="_blank">Buy tickets</a><br />
-      <strong>Opera schedule & tickets:</strong> 
-      <a href="https://www.teatroallascala.org/en/tickets.html" target="_blank">teatroallascala.org</a><br />
-      <strong>Dress code & information:</strong> 
-      <a href="https://www.teatroallascala.org/en/visit/information/information.html" target="_blank">Visit here</a>
-    </p>
-  </div>
-
-  <div class="attraction">
-    <h2><a href="https://maps.app.goo.gl/yG7uAajifxDyukRh6" target="_blank">5. Luini – The Original Panzerotti</a></h2>
-    <p>📍 Via Santa Radegonda 16, Milan</p>
-    <p>Try the classic Tomato and Mozzarella panzerotto!<br />
-      <a href="https://www.luini.it/lista_luini_al_forno.pdf" target="_blank">View the menu</a><br />
-      ⚠️ Ask for the allergen list if you have allergies or lactose intolerance.
-    </p>
-  </div>
-
-  <div class="attraction">
-    <h2><a href="https://maps.app.goo.gl/rtvzqpUjqS3zxymZA" target="_blank">6. La Rinascente – Shopping & Rooftop</a></h2>
-    <p>📍 Via Santa Radegonda 3, Milan</p>
-    <p>Luxury department store offering top Italian and international brands like Diesel, Armani, Prada, Gucci, Chanel, and more.</p>
-    <p>🛍️ <a href="https://www.rinascente.it/en/Brands" target="_blank">Brand list</a><br />
-      🍸 Rooftop food & drinks with a view of the Duomo: 
-      <a href="https://www.rinascente.it/en/ristoranti-terrazza-store-milano" target="_blank">Restaurants info</a>
-    </p>
-  </div>
-
-  <div class="attraction">
-    <h2>7. 🍦 Other Notable Spots (Near the Duomo)</h2>
+  <button class="accordion">🏛️ Centro Storico / Duomo Area</button>
+  <div class="panel">
     <ul>
-      <li><a href="https://maps.app.goo.gl/axkWMQtvibyV8Kzt9" target="_blank"><strong>Spun Tiramisù</strong></a> – Via Victor Hugo 3</li>
-      <li><a href="https://maps.app.goo.gl/dxGXdj7DT4oJDR8A6" target="_blank"><strong>Ciacco Gelateria</strong></a> – Via Spadari 3</li>
-      <li><a href="https://maps.app.goo.gl/GsjuCu8PRAbCKyK68" target="_blank"><strong>All’Antico Vinaio</strong></a> – Via Orefici 5</li>
-      <li><a href="https://maps.app.goo.gl/vZZhnopeXDDnVjAU9" target="_blank"><strong>Starbucks Reserve Roastery</strong></a> – Piazza Cordusio 1</li>
+      <li><a href="https://maps.app.goo.gl/caKX8rioUSxRUDgc7" target="_blank"><strong>Duomo di Milano</strong></a> – The iconic Gothic cathedral</li>
+      <li><a href="https://maps.app.goo.gl/aaffgp3ZFzvwkSUj8" target="_blank"><strong>Museo del Novecento</strong></a> – Modern art with Duomo view</li>
+      <li><a href="https://maps.app.goo.gl/wTPvahJk4kAEtGPX7" target="_blank"><strong>Galleria Vittorio Emanuele II</strong></a> – Historic shopping arcade</li>
+      <li><a href="https://maps.app.goo.gl/fir4pcFdLH9NWJs39" target="_blank"><strong>Piazza della Scala & Teatro alla Scala</strong></a> – Historic opera house and city hall</li>
+      <li><a href="https://maps.app.goo.gl/yG7uAajifxDyukRh6" target="_blank"><strong>Luini</strong></a> – Milan's most famous panzerotti</li>
+      <li><a href="https://maps.app.goo.gl/rtvzqpUjqS3zxymZA" target="_blank"><strong>La Rinascente</strong></a> – Shopping & rooftop bar with view</li>
+      <li><strong>Other foodie stops:</strong>
+        <ul>
+          <li><a href="https://maps.app.goo.gl/axkWMQtvibyV8Kzt9" target="_blank">Spun Tiramisù</a></li>
+          <li><a href="https://maps.app.goo.gl/dxGXdj7DT4oJDR8A6" target="_blank">Ciacco Gelateria</a></li>
+          <li><a href="https://maps.app.goo.gl/GsjuCu8PRAbCKyK68" target="_blank">All’Antico Vinaio</a></li>
+          <li><a href="https://maps.app.goo.gl/vZZhnopeXDDnVjAU9" target="_blank">Starbucks Reserve Roastery</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 
-  <p><em>Enjoy your time in Milan!</em></p>
+  <script>
+    const acc = document.querySelectorAll(".accordion");
+    acc.forEach(button => {
+      button.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = (panel.style.display === "block") ? "none" : "block";
+      });
+    });
+  </script>
 </body>
 </html>
-update with Google Maps links
